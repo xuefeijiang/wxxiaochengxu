@@ -1,0 +1,42 @@
+/* pages/video/video.wxss */
+.slide{ 
+  height:500rpx;
+}
+.slide .slide-image{ 
+  width:100%;
+  height:500px; 
+}
+
+.singlemovie{
+    float:left;
+    width:110px;
+    text-align:center;
+    margin:10px;
+    font-family: "微软雅黑";
+}
+.singlemovie image{
+    border:2px solid firebrick;
+}
+.board {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.board-item {
+  display: flex;
+  cursor: pointer;
+  border: 1rpx solid #eee;
+  margin: 40rpx;
+  padding: 40rpx;
+}
+
+.board-item .board-item-title {
+  flex: 1;
+}
+
+.board-item .arrow {
+  height: 40rpx;
+  width: 40rpx;
+}
+

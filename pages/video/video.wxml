@@ -1,0 +1,27 @@
+<!--pages/video/video.wxml-->
+<view>
+  
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}
+  circular 
+  class="slide">
+    <swiper-item wx:for="{{banner.content}}" wx:key="{{index}}">
+      <image src="{{item.image}}" class="slide-image" />
+    </swiper-item> 
+  </swiper>
+
+   <scroll-view class="board" scroll-y="true">
+    <navigator 
+      wx:for="{{list}}"
+      wx:key="{{item.key}}"
+      url="{{'../list/list?key='+item.key}}"
+    >
+      <view class="board-item">
+        <text class="board-item-title">{{item.title}}</text>
+        <image class="arrow" src="/icon/arrowright.png" mode="aspectFill"/>
+      </view>
+    </navigator>  
+  </scroll-view>
+</view>

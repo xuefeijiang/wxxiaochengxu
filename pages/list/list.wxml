@@ -1,0 +1,17 @@
+<view>
+  <view class="list">
+   <navigator 
+      wx:for="{{list}}"
+      url="{{'../item/item?id=' + item.id}}"
+      wx:key="{{item.id}}"
+    >
+    <!-- <block
+      wx:for="{{list}}"
+      wx:key="{{item.id}}"
+    > -->
+      <product api="movie" item="{{item}}"/>
+    <!-- </block> -->
+    </navigator>
+  </view>
+
+</view>

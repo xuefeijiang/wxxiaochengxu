@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+ "navigationBarBackgroundColor": "#1E90FF",
+  "usingComponents": {
+    "product": "../../components/product/product"
+  }
+}

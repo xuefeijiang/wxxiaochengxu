@@ -1,0 +1,67 @@
+<!--pages/mine/mine.wxml-->
+<view class="page">
+  <navigator url="" class="weui-media-box weui-media-box_appmsg" >
+    <view class="weui">
+     <view class="weui-photo">
+     <open-data type="userAvatarUrl"></open-data>
+     </view>
+      <view class="weui-title">
+      <open-data type="userNickName"></open-data>
+      </view>
+      <view class="weui-desc">
+      微信号:aiyumengfixiang
+      </view>
+    </view>
+  </navigator>
+
+   <navigator class="weui-cell top">
+     <navigator url="/pages/music/music" open-type="switchTab">
+        <view class="active top">
+          <view class="weui-cell__hd">
+            <image src="/icon/music5.png" class="image"></image>
+          </view>
+          <view class="weui-cell__bd">音乐</view>
+          <view class="weui-cell__ft">我的音乐小屋</view>
+        </view>
+     </navigator>
+     <navigator url="/pages/book/book" open-type="switchTab">
+         <view class="active conter">
+        <view class="weui-cell__hd">
+          <image src="/icon/book5.png" class="image" ></image>
+        </view>
+        <view class="weui-cell__bd">阅读</view>
+        <view class="weui-cell__ft">我的阅读小屋</view>
+    </view>
+     </navigator>
+     <navigator url="/pages/video/video" open-type="switchTab">
+       <view class="active botton">  
+      <view class="weui-cell__hd">
+        <image src="/icon/zhibo.png" class="image"></image>
+      </view>
+      <view class="weui-cell__bd">视频</view>
+      <view class="weui-cell__ft">我的视频小屋</view>
+    </view>
+     </navigator>
+
+  
+   
+    
+    </navigator>
+ 
+ <navigator class="weui-cell">
+  <view class="weui-cells_after-title active">
+      <view class="weui-cell__hd">
+        <image src="/icon/code.png" class="image"></image>
+      </view>
+      <view class="weui-cell__bd ">扫一扫</view>
+      <view class="weui-cell__ft">扫扫更健康</view>
+  </view>
+    <view class="weui-cells active map" bindtap="location">
+      <view class="weui-cell__hd">
+        <image src="/icon/map.png" class="image"></image>
+      </view>
+      <view class="weui-cell__bd">地图</view>
+      <view class="weui-cell__ft">猜猜我在哪里</view>
+    </view>
+ </navigator>
+</view>

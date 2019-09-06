@@ -1,0 +1,73 @@
+/* pages/music/music.wxss */
+.top{
+  display: flex;
+  justify-content: space-around;
+   font-size: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding:10px 0;
+    background: #C1FFC1
+}
+.image{
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+}
+.slide{ 
+  height:220px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.slide-image{ 
+  width:100%;
+}
+.item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+}
+
+.item .poster {
+  width: 128rpx;
+  height: 168rpx;
+  margin-right: 20rpx;
+}
+
+.item .meta {
+  flex: 1;
+}
+
+.item .meta .title,
+.item .meta .sub-title {
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.item .meta .title {
+  font-size: 32rpx;
+}
+
+.item .meta .sub-title {
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+
+.item .meta .artists {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.item .rating {
+  display: inline-block;
+  width: 60rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(247, 76, 49, 0.8);
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 20rpx;
+}

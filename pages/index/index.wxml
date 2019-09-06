@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}
+  circular class="slide">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item> 
+  </swiper>
+  <view class="post-container" wx:for="{{postList}}" wx:key="{{index}}" >
+   <view class="post-author-date">
+    <image src="{{postList[index].avatar}}" class="avatar" />
+    <text class="date">{{postList[index].date}}</text> 
+   </view>
+   <text class="title">{{postList[index].title}}</text>
+   <image src="{{postList[index].postImg}}" class="postimg"></image>
+   <view class="content">{{postList[index].content}}</view>
+   <view>
+   <mp-loading type="circle" tips="{{tips}}"></mp-loading>
+  
+   </view>
+  </view> 
+  
+</view>

@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/music/music",
+    "pages/video/video",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/book/book",
+    "pages/bookdetail/bookdetail",
+    "pages/booklist/booklist",
+    "pages/videoDetail/videoDetail",
+    "components/product/product",
+    "pages/item/item"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "提高演技，改变命运",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "white",
+    "color": "#778899",
+    "selectedColor": "#4876FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icon/home.png",
+        "selectedIconPath": "./icon/home-active.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "阅读",
+        "iconPath": "./icon/reading.png",
+        "selectedIconPath": "./icon/reading-active.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "./icon/music.png",
+        "selectedIconPath": "./icon/music-active.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "./icon/shiping.png",
+        "selectedIconPath": "./icon/shiping-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./icon/my.png",
+        "selectedIconPath": "./icon/my-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

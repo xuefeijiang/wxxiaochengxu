@@ -1,0 +1,35 @@
+<!--pages/music/music.wxml-->
+<view>
+  <!-- <view class="top">
+    <view class="fl" bindtap="loadPage">
+      <image src="/icon/music5.png" class="image"></image>
+      最新</view>
+    <view class="fc" bindtap="loadPage">
+     <image src="/icon/xin1.png" class="image"></image>
+     推荐</view>
+    <view class="fr" bindtap="loadPage">
+     <image src="/icon/sou1.png" class="image"></image>
+    搜索</view>  
+  </view> -->
+   <swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" 
+  interval="3000" 
+  duration="{{1000}}
+  circular
+   class="slide">
+    <swiper-item wx:for="{{music}}" wx:if="{{index>0&&index<4}}" wx:key="{{index}}">
+      <image src="{{item.pic_huge}}" class="slide-image" />
+    </swiper-item> 
+  </swiper>
+   <view class="item" wx:for="{{music}}"  wx:key="{{index}}">
+    <image src="{{item.pic_huge}}" class="poster"/>
+    <view class="meta">
+    <text class="title">{{item.album_title}}</text>
+    <text class="sub-title">{{item.country}}({{item.publishtime}})</text>
+    <view class="artists">歌手：<block>{{item.artist_name}}</block></view>
+  </view> 
+  <view>
+    <text class="rating">{{item.hot}}</text>
+  </view>
+</view>  
+</view>
